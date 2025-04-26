@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Plataforma Educativa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="login">
+    <h2>Inicio de Sesión</h2>
+    <input type="text" id="user" placeholder="Usuario">
+    <input type="password" id="pass" placeholder="Contraseña">
+    <button onclick="login()">Ingresar</button>
+  </div>
+
+  <div id="app" style="display:none;">
+    <h2>Bienvenido, <span id="role"></span></h2>
+    <div id="selectors">
+      <select id="materia"></select>
+      <select id="grado"></select>
+      <select id="periodo"></select>
+      <button onclick="mostrarFormulario()">Ingresar Notas</button>
+    </div>
+
+    <div id="formularioNotas" style="display:none;">
+      <input type="text" id="nombreEstudiante" placeholder="Nombre del estudiante">
+      <input type="number" id="saber" placeholder="Nota Saber">
+      <input type="number" id="hacer" placeholder="Nota Hacer">
+      <input type="number" id="deber" placeholder="Nota Deber">
+      <textarea id="desempeno" placeholder="Desempeño"></textarea>
+      <button onclick="guardarNota()">Guardar Nota</button>
+    </div>
+
+    <div id="tablaNotas"></div>
+    <button onclick="descargarPDF()">Descargar PDF</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

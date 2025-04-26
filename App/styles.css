@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f4f4f4;
+}
+#login, #app {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+input, select, textarea, button {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
